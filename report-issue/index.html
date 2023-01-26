@@ -87,7 +87,13 @@
           <p/>Incident number: <b x-text="incidentNumber"></b>
         </div>
       </div>
-        <div class="qr-dialog" x-show="showQr" @click="showQr = true">
+       
+
+      <h1 x-show="!createIncident">Thanks for your feedback!</h1>
+    </section>
+  </main>
+
+  <div class="qr-dialog" x-show="showQr" @click="showQr = true">
     <div id="qr-code"></div>
     <div>Tap to close</div>
   </div>
@@ -95,19 +101,6 @@
     <img src="./assets/qrlogo.png" class="qr-logo"/>
     <a @click="showQr = true">Report with phone instead</a>
   </footer>
-
-      <h1 x-show="!createIncident">Thanks for your feedback!</h1>
-    </section>
-  </main>
-
- <!-- <div class="qr-dialog" x-show="showQr" @click="showQr = true">
-    <div id="qr-code"></div>
-    <div>Tap to close</div>
-  </div>
-  <footer>
-    <img src="./assets/qrlogo.png" class="qr-logo"/>
-    <a @click="showQr = true">Report with phone instead</a>
-  </footer> -->
 </body>
 
 </html>
