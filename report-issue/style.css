@@ -208,7 +208,7 @@ footer {
 
 .qr-dialog {
   position: absolute;
-  top: calc(90% - 200px);
+  top: calc(80% - 200px);
   left: calc(25% - 200px);
   width: 400px;
   height: 400px;
